@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run vercel-build",
+  "outputDirectory": ".vercel/output",
+  "framework": null,
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }
+  ]
+}
